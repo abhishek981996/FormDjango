@@ -1,4 +1,5 @@
 from contact.forms import ContactForm
+from django.shortcuts import render
 
 # add to your views
 def contact(request):
