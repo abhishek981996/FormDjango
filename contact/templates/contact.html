@@ -5,6 +5,9 @@
 <form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
+    <label for="{{ personal_detail_form.date_of_birth.id_for_label }}"> 
+	{{ personal_detail_form.date_of_birth.label }}
+	</label>
     <button type="submit">Submit</button>
 </form>
 {% endblock %}

@@ -41,7 +41,8 @@ def contact(request):
             )
             email.send()
             return redirect('contact')
-
+    else:
+    	form = ContactForm(prefix='Contactform', label_suffix='')
     return render(request, 'contact.html', {
-        'form': form_class,
+        'form': form,
     })
